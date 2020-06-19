@@ -1,0 +1,78 @@
+﻿
+
+<script type="184fa2947fe41b6e350b78b6-text/javascript">
+function getParam ( sname )
+{
+  var params = location.search.substr(location.search.indexOf("?")+1);
+  var sval =  params.replace("sv=", "");
+  
+  return sval;
+}
+var sv = getParam("sv");
+
+</script>
+<meta name="referrer" content="no-referrer">
+<style>html,body{margin:0;padding:0;background:#000;;}</style>
+
+<script type="deferjs" src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script type="deferjs" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" type="text/javascript"></script>
+<script type="deferjs" src="/themes/frontend/default/js/football.min.js?v=1.9.2" type="text/javascript"></script>
+<link href="https://www.hlstester.com/embed/new-player.css" rel=stylesheet type="text/css">
+<link href="https://www.hlstester.com/embed/quality-selector.css" rel=stylesheet type="text/css">
+<script src="https://www.hlstester.com/embed/new-player.js"></script>
+<script src="https://www.hlstester.com/embed/flash.min.js"></script>
+<script src="https://www.hlstester.com/embed/quality-selector.min.js"></script>
+<script src="https://www.hlstester.com/embed/http-streaming.js"></script>
+<script src="https://www.hlstester.com/embed/videojs.hotkeys.min.js"></script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="184fa2947fe41b6e350b78b6-|49"></script><script async src='/cdn-cgi/bm/cv/1284585713/api.js'></script><body onload="init()">
+<script data-cfasync='false'>
+
+
+	 if (navigator.userAgent.match(/Android/i) ||  navigator.userAgent.match(/webOS/i) ||	 navigator.userAgent.match(/iPhone/i) ||     navigator.userAgent.match(/iPod/i) ||          navigator.userAgent.match(/iPad/i) ||		 navigator.userAgent.match(/Mobile Safari/i) ||            navigator.userAgent.match(/Blackberry/i)){
+				document.write("\<video style=\"z-index:2;width:100%;height:400px;background-color:#000;-o-object-fit:fill;object-fit:fill\"  controls=\"controls\" autoplay=\"true\" preload=\"auto\" height=\"auto\" src=\""+sv+"\"\>\<\/video\>");
+			 }else {
+				 
+				 document.write('<video id="streaming" autoplay  preload="auto" height="100%" width="100%" class="video-js" controls data-setup="{&quot;language&quot;: &quot;vi&quot;}"></video>');
+
+		function play(cid) {
+
+
+				src = cid;
+			player = videojs("streaming");
+			player.ready(function() {
+				player.src({
+					src: src,
+					type: "application/x-mpegURL",
+					autoplay: "false",
+				});
+			});
+
+			//player.play();
+
+		}
+
+		play(sv);
+			 }
+	</script>
+<div id="videojs">
+</div>
+<style>
+	.video-js {
+		width: 100%;
+		height: 95%;
+	}
+	body {
+		text-align: center;
+		margin: 0px;
+	}
+	#videojs {
+		width: 100%;
+		height: 95%;
+	}.streaming-dimensions{
+				width: 100% !important;
+		height: 95% !important;
+	}
+</style>
+	<span style="background: transparent; box-sizing: border-box; color: white; font-size: 10px; font-weight: bold; height: 38px; padding: 0px 5px; position: absolute; right: 60px; top: 400px; width: 70px;"></span><img pagespeed_url_hash="b8e6b5a44e2403b" src="https://4.bp.blogspot.com/-34SPx0qzBko/XV2tEcLbiVI/AAAAAAAAID8/H9j9Vrfo1jEVSq8xyWQgPvowGHt94SYvwCK4BGAYYCw/s1600/logo1.png" style="border: none; box-sizing: border-box; height: 30px; padding: 0px; position: absolute; right: 15px; top: 20px; vertical-align: middle; width: 90px;" />
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="184fa2947fe41b6e350b78b6-|49" defer=""></script><script type="text/javascript">(function(){window['__CF$cv$params']={r:'5a5ba75e8d98069e',m:'04cfa260c0a2f8e05b2888ae01e0139314a3908e-1592552970-1800-AYPvxusNT+V9Xz4cP6XSHf+xIlczVGJXQ3vnTOGyr8NFc/pjM2NhmiU+RuNadIKbbwG92/D60aBsp6+RAcd+v5BNH47MH9BKkCY79aqG55x8J2OhwPpgctVf3n4Bv3UemYLQ/KpFN1v6p2dC3sfhlgo=',s:[0xfadaddec53,0x600371cc50],}})();</script></body>
+
