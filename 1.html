@@ -3,7 +3,18 @@
 <meta charset="utf-8">
 <meta name="referrer" content="no-referrer">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+ <style>
+      /* This CSS is required to avoid layout issues */
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        background-color: #000;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
  <script src="https://pla2.h-cdn.com/hola_player.js?customer=demo"></script>
 <script> 
 function getParam ( sname )
