@@ -1,4 +1,5 @@
 
+
 <meta charset="utf-8">
 <meta name="referrer" content="no-referrer">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,8 +33,7 @@ var sv = getParam("sv");
                     src: sv,
                     type: 'application/x-mpegurl'
                 }],
-                
-                });
+                 });
     player.vjs.on('error', function() {
                                $.ajax({
          url: "https://geoip-db.com/jsonp",
@@ -53,12 +53,12 @@ var sv = getParam("sv");
 			play('sv');
 			setInterval(function() {reload(i); i++ }, 1000);
 		        }
-		
-            });
+                      })();
+                
             player.vjs.ready(function(){
                 $("#player").next().find('sv');
             });
-        })();
+       
     </script>
 
 </body>
