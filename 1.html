@@ -1,9 +1,20 @@
 
-
-
-
-
+<html><head>
+ <style>
+      /* This CSS is required to avoid layout issues */
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        background-color: #000;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+      }
+    </style></head>
+<meta charset="utf-8">
 <meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="text/javascript" src="https://cdn.pr.trt.com.tr/static/js/player/player.1.0.165.js"></script>
 <script> 
 function getParam ( sname )
@@ -22,20 +33,19 @@ var sv = getParam("sv");
  var i = 0;
     (function(){
         window.hola_player({
-            sources: [{
-                src: sv,
-                type: 'application/x-mpegurl'
-                     }],
             player: "#player",
-            width: "100%",
-            height: "100%",
             auto_play: true,
             dvr: false,
             muted: false,
             controls: true,
             share: false,
             settings: true,
-            
+           width: "100%",
+            height: "100%",
+           sources: [{
+                src: sv,
+                type: 'application/x-mpegurl'
+            }],
         });
     player.vjs.on('error', function() {
                                $.ajax({
@@ -63,6 +73,7 @@ var sv = getParam("sv");
 
        </script>
 </body>
+</html>
 <span style='position:absolute; bottom: 35px!important; left: 10px!important; max-bottom: 10px!important; max-width: 170%!important; width: 22%!important; font-size: 13px; font-weight: bold;color: #ff0;'>
 <img style= 'left: 10px!important; max-height: 50px!important; max-width: 100%!important; width: 90%!important;' src='http://1.bp.blogspot.com/-6Utq5JU_l2w/YCAo8gB0x7I/AAAAAAAALZU/YJxOQHkvIywpU4znsCgYEvIsc-U8ijY1wCK4BGAYYCw/s1600/2.png'></span>
 
