@@ -1,20 +1,30 @@
 
-
- <html>
-	<head>
+ <html><head>
 <style id='page-skin-1' type='text/css'><!--
 *{margin:0; padding:0; }
 #player{width: 100vw; height: 100vh;}
 --></style> 
 <style> video {object-fit:fill}</style><style>html,body{margin:0;}</style>
 <style> .video-js {width: 100%; height: 100%;} #videojs {width: 100%; height: 100%;}</style>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
+	<meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">	
 <script>var google_GeoObject=google_check_module('ODE1OTE4NC43NTQ=');</script>
+	<script>
+function getParam ( sname )
+{
+  var params = location.search.substr(location.search.indexOf("?")+1);
+  var sval =  params.replace("sv=", "");
+  
+  return sval;
+}
+var sv = getParam("sv");
 
-                                </head>
-		<body>
+</script>
 
-		<script src="https://cdns.livestreamapi.ru/js/playerjs_ps.js" type="text/javascript"></script>
+</head>
+<body onload="init()">	
+	<div id="player" style="width:100%;height:100%;"></div>
+<script src="https://cdns.livestreamapi.ru/js/playerjs_ps.js" type="text/javascript"></script>
 <script> 
 	
 function getParam ( sname )
@@ -26,7 +36,6 @@ function getParam ( sname )
 var sv = getParam("sv");
 	
 </script>
-<body onload="init()">
 
 <div id="player" style="width:100%;height:100%;"></div>
 
@@ -35,15 +44,14 @@ var sv = getParam("sv");
 	   id:"player",   
 	   url:sv, 
 	   embed:sv,
-	   file:sv, 
+	   file:sv,  
 	   hls:1, 
 	   title:"",
 	   poster:"https://cdns.livestreamapi.ru/img/soc/1.jpg",
 	   autoplay:1,
 
 	   });
-</script><span style='position:absolute; bottom: 30px!important; left: 10px!important; max-bottom: 10px!important; max-width: 170%!important; width: 22%!important; font-size: 13px; font-weight: bold;color: #ff0;'>
-<img style= 'left: 10px!important; max-height: 50px!important; max-width: 100%!important; width: 90%!important;' src='http://1.bp.blogspot.com/-6Utq5JU_l2w/YCAo8gB0x7I/AAAAAAAALZU/YJxOQHkvIywpU4znsCgYEvIsc-U8ijY1wCK4BGAYYCw/s1600/2.png'></span>
+</script>
 <script>
     var update_status = true;
 </script>
@@ -60,6 +68,7 @@ var sv = getParam("sv");
         }
     });
 </script>
+<span style='position:absolute; bottom: 30px!important; left: 10px!important; max-bottom: 10px!important; max-width: 170%!important; width: 22%!important; font-size: 13px; font-weight: bold;color: #ff0;'>
+<img style= 'left: 10px!important; max-height: 50px!important; max-width: 100%!important; width: 90%!important;' src='http://1.bp.blogspot.com/-6Utq5JU_l2w/YCAo8gB0x7I/AAAAAAAALZU/YJxOQHkvIywpU4znsCgYEvIsc-U8ijY1wCK4BGAYYCw/s1600/2.png'></span>
 </body>
 </html>
-
